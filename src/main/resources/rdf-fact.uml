@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_k8164OwbEemoMPaR8cRugg" name="rdf-fact">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_lCJRoOwbEemoMPaR8cRugg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_k9gpQOwbEemoMPaR8cRugg" name="RdfFactStateMachine">
+    <region xmi:type="uml:Region" xmi:id="_k9iecOwbEemoMPaR8cRugg" name="Region1">
+      <transition xmi:type="uml:Transition" xmi:id="_EBz84OweEemoMPaR8cRugg" source="_sr87oOwbEemoMPaR8cRugg" target="_2IUvcOwbEemoMPaR8cRugg">
+        <trigger xmi:type="uml:Trigger" xmi:id="_HLPL8OweEemoMPaR8cRugg" event="_VIpz8OwcEemoMPaR8cRugg"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_JpkPkOweEemoMPaR8cRugg" source="_2IUvcOwbEemoMPaR8cRugg" target="_xSzyAOwbEemoMPaR8cRugg">
+        <trigger xmi:type="uml:Trigger" xmi:id="_L-MkoOweEemoMPaR8cRugg" event="_unS8EOwdEemoMPaR8cRugg"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_PSME8OweEemoMPaR8cRugg" source="_2IUvcOwbEemoMPaR8cRugg" target="_4LBnAOwbEemoMPaR8cRugg">
+        <trigger xmi:type="uml:Trigger" xmi:id="_SoBYUOweEemoMPaR8cRugg" event="_yKkOgOwdEemoMPaR8cRugg"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_UfhFcOweEemoMPaR8cRugg" source="_4LBnAOwbEemoMPaR8cRugg" target="_2IUvcOwbEemoMPaR8cRugg">
+        <trigger xmi:type="uml:Trigger" xmi:id="_XGWk0OweEemoMPaR8cRugg" event="_15KnMOwdEemoMPaR8cRugg"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_awTHAOweEemoMPaR8cRugg" source="_4LBnAOwbEemoMPaR8cRugg" target="_7oelUOwbEemoMPaR8cRugg">
+        <trigger xmi:type="uml:Trigger" xmi:id="_dE1VcOweEemoMPaR8cRugg" event="_5w8KAOwdEemoMPaR8cRugg"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_f7NssOweEemoMPaR8cRugg" source="_7oelUOwbEemoMPaR8cRugg" target="_2IUvcOwbEemoMPaR8cRugg">
+        <trigger xmi:type="uml:Trigger" xmi:id="_iR7FYOweEemoMPaR8cRugg" event="_15KnMOwdEemoMPaR8cRugg"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_o-GpgOweEemoMPaR8cRugg" source="_7oelUOwbEemoMPaR8cRugg" target="_zmRpcOwbEemoMPaR8cRugg">
+        <trigger xmi:type="uml:Trigger" xmi:id="_sQtCsOweEemoMPaR8cRugg" event="_5w8KAOwdEemoMPaR8cRugg"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_zNG0IOweEemoMPaR8cRugg" source="_zmRpcOwbEemoMPaR8cRugg" target="_thPdgOweEemoMPaR8cRugg"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_sr87oOwbEemoMPaR8cRugg" name="Start"/>
+      <subvertex xmi:type="uml:State" xmi:id="_xSzyAOwbEemoMPaR8cRugg" name="Deleted"/>
+      <subvertex xmi:type="uml:State" xmi:id="_zmRpcOwbEemoMPaR8cRugg" name="Valid"/>
+      <subvertex xmi:type="uml:State" xmi:id="_2IUvcOwbEemoMPaR8cRugg" name="Draft"/>
+      <subvertex xmi:type="uml:State" xmi:id="_4LBnAOwbEemoMPaR8cRugg" name="UnderTechnicalReview"/>
+      <subvertex xmi:type="uml:State" xmi:id="_7oelUOwbEemoMPaR8cRugg" name="UnderTechnicalValidation"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_thPdgOweEemoMPaR8cRugg" name="Stop"/>
+    </region>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Signal" xmi:id="_F-tZUOwcEemoMPaR8cRugg" name="create"/>
+  <packagedElement xmi:type="uml:Signal" xmi:id="_IWAn4OwcEemoMPaR8cRugg" name="delete"/>
+  <packagedElement xmi:type="uml:Signal" xmi:id="_LYIVEOwcEemoMPaR8cRugg" name="submit"/>
+  <packagedElement xmi:type="uml:Signal" xmi:id="_ODxb8OwcEemoMPaR8cRugg" name="disapprove"/>
+  <packagedElement xmi:type="uml:Signal" xmi:id="_Q4MrYOwcEemoMPaR8cRugg" name="approve"/>
+  <packagedElement xmi:type="uml:SignalEvent" xmi:id="_VIpz8OwcEemoMPaR8cRugg" name="signal-create" signal="_F-tZUOwcEemoMPaR8cRugg"/>
+  <packagedElement xmi:type="uml:SignalEvent" xmi:id="_unS8EOwdEemoMPaR8cRugg" name="signal-delete" signal="_IWAn4OwcEemoMPaR8cRugg"/>
+  <packagedElement xmi:type="uml:SignalEvent" xmi:id="_yKkOgOwdEemoMPaR8cRugg" name="signal-submit" signal="_LYIVEOwcEemoMPaR8cRugg"/>
+  <packagedElement xmi:type="uml:SignalEvent" xmi:id="_15KnMOwdEemoMPaR8cRugg" name="signal-disapprove" signal="_ODxb8OwcEemoMPaR8cRugg"/>
+  <packagedElement xmi:type="uml:SignalEvent" xmi:id="_5w8KAOwdEemoMPaR8cRugg" name="signal-approve" signal="_Q4MrYOwcEemoMPaR8cRugg"/>
+</uml:Model>

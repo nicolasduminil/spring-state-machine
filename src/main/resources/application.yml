@@ -1,0 +1,36 @@
+logging:
+  level:
+    root: INFO
+    org.springframework.statemachine: error
+    org.hibernate.SQL: INFO
+    org.hibernate.type.descriptor.sql: INFO
+    org.hibernate.tool.schema: ERROR
+security:
+  basic:
+    enabled: false
+spring:
+  datasource:
+    platform: oracle
+    url: jdbc:oracle:thin:@192.19.0.1:1521:xe
+    username: nicolas
+    password: California12
+    driver-class-name: oracle.jdbc.OracleDriver
+    testWhileIdle: true
+    validationQuery: SELECT 1
+    hikari:
+      connectionTimeout: 30000
+      idleTimeout: 600000
+      maxLifetime: 1800000
+    initialization-mode: always
+    jpa:
+    generate-ddl: false
+    hibernate:
+      ddl-auto: none
+      show_sql: true
+      format_sql: true
+    properties:
+      hibernate:
+        connection:
+          charSet: UTF-8
+        dialect: org.hibernate.dialect.Oracle12cDialect
+
